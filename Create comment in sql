@@ -1,0 +1,37 @@
+create database school_student; 
+show databases;
+use school_student; 
+select database(); 
+
+drop database school_student; 
+
+-- let's create a table:
+create table  student_table_1(
+student_id int,
+student_name varchar(100),
+email varchar(80),
+address varchar(90));
+
+show tables ; 
+
+alter table student_table_1 add coures varchar(100);
+describe student_table_1; 
+
+
+
+create table employee(
+employeeid int primary key,
+firstname varchar(100),
+lastname varchar(80));
+
+describe employee;
+
+CREATE TABLE students(
+studentID INT PRIMARY KEY,
+FirstName Varchar(50),
+LastName Varchar(50),
+Age INT,
+Grade CHAR (1) CHECK (Grade IN ('A', 'B', 'C', 'D')) 
+);
+
+describe students;
